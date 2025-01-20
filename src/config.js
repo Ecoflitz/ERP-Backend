@@ -1,5 +1,5 @@
 const os = require('os');
-
+require('dotenv').config();
 const config = {
   gcloud: {
     bucket: 'fldemo-files',
@@ -9,7 +9,7 @@ const config = {
     saltRounds: 12,
   },
   admin_pass: 'password',
-  admin_email: 'admin@flatlogic.com',
+  admin_email: 'admin@ecoflitz.com',
   providers: {
     LOCAL: 'local',
     GOOGLE: 'google',
@@ -36,7 +36,7 @@ const config = {
   },
   uploadDir: os.tmpdir(),
   email: {
-    from: 'ERP <app@flatlogic.app>',
+    from: 'ERP <app@ecoflitz.app>',
     host: 'email-smtp.us-east-1.amazonaws.com',
     port: 587,
     auth: {
@@ -57,7 +57,7 @@ const config = {
   project_uuid: '22ed5bcd-4567-4ca2-8503-9708d833eb76',
   flHost:
     process.env.NODE_ENV === 'production'
-      ? 'https://flatlogic.com/projects'
+      ? 'https://ecoflitz.com/projects'
       : 'http://localhost:3000/projects',
 };
 config.pexelsKey = 'Vc99rnmOhHhJAbgGQoKLZtsaIVfkeownoQNbTj78VemUjKh08ZYRbf18';

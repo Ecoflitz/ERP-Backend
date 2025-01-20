@@ -48,7 +48,7 @@ module.exports = {
         {
           id: ids[3],
           firstName: 'Super Admin',
-          email: 'super_admin@flatlogic.com',
+          email: 'super_admin@ecoflitz.com',
           emailVerified: true,
           provider: config.providers.LOCAL,
           password: hash,

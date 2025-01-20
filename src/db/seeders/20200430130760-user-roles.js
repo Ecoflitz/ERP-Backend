@@ -839,12 +839,12 @@ primary key ("roles_permissionsId", "permissionId")
     await queryInterface.sequelize.query(
       `UPDATE "users" SET "app_roleId"='${getId(
         'SuperAdmin',
-      )}' WHERE "email"='super_admin@flatlogic.com'`,
+      )}' WHERE "email"='super_admin@ecoflitz.com'`,
     );
     await queryInterface.sequelize.query(
       `UPDATE "users" SET "app_roleId"='${getId(
         'Administrator',
-      )}' WHERE "email"='admin@flatlogic.com'`,
+      )}' WHERE "email"='admin@ecoflitz.com'`,
     );
 
     await queryInterface.sequelize.query(
